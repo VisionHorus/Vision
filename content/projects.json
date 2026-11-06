@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Tamo Junto Botequim",
+    "slug": "tamo-junto-botequim",
+    "category": "Gastronomia · Salvador",
+    "url": "https://tamojuntobotequim.com.br/",
+    "image": "tamo-junto-case.webp",
+    "imageWidth": 759,
+    "imageHeight": 900,
+    "imageAlt": "Petiscos e prato servido no Tamo Junto Botequim",
+    "shortDescription": "Presença digital para um botequim de Salvador, com gastronomia e informações úteis para quem quer visitar.",
+    "description": "Site para um botequim de Salvador, com apresentação gastronômica e informações sobre as unidades para apoiar a visita do público."
+  },
+  {
+    "name": "Lopes Tattoo",
+    "slug": "lopes-tattoo",
+    "category": "Portfólio · tatuagem autoral",
+    "url": "https://kfezin.github.io/lopes-tattoo-site/index.html",
+    "image": "lopes-tattoo-case.webp",
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageAlt": "Tatuagem autoral em blackwork apresentada no portfólio Lopes Tattoo",
+    "shortDescription": "Site e portfólio de Ícaro Lopes, tatuador em Feira de Santana, com trabalhos de blackwork e fine line.",
+    "description": "Portfólio de Ícaro Lopes, tatuador em Feira de Santana, com trabalhos de blackwork e fine line e caminhos para conversar sobre um projeto."
+  },
+  {
+    "name": "Eurogenesis",
+    "slug": "eurogenesis",
+    "category": "Institucional · pesquisa de origens",
+    "url": "https://eurogenesis.com.br/",
+    "image": "eurogenesis-citizenship.jpg",
+    "imageWidth": 640,
+    "imageHeight": 427,
+    "imageAlt": "Bandeiras da União Europeia e da Itália usadas na apresentação de cidadania da Eurogenesis",
+    "shortDescription": "Site institucional sobre pesquisa de origens e documentos, com serviços ligados à cidadania italiana e portuguesa.",
+    "description": "Site institucional que apresenta pesquisa de origens e documentos e serviços relacionados à cidadania italiana e portuguesa."
+  }
+]
