@@ -1,0 +1,56 @@
+[
+  {
+    "file": "antes-diagnostico.json",
+    "score": 100,
+    "LCP_ms": 1203.0538,
+    "CLS": 0,
+    "FCP_ms": 1203.0538,
+    "TBT_ms": 0,
+    "speedIndex_ms": 1203.0538
+  },
+  {
+    "file": "antes-home.json",
+    "score": 97,
+    "LCP_ms": 1355.7634,
+    "CLS": 0,
+    "FCP_ms": 1355.7634,
+    "TBT_ms": 181.8816999999999,
+    "speedIndex_ms": 1355.7634
+  },
+  {
+    "file": "antes-projetos.json",
+    "score": 99,
+    "LCP_ms": 1204.1744,
+    "CLS": 0,
+    "FCP_ms": 1204.1744,
+    "TBT_ms": 101.08720000000017,
+    "speedIndex_ms": 1204.1744
+  },
+  {
+    "file": "depois-diagnostico.json",
+    "score": 100,
+    "LCP_ms": 1202.1323,
+    "CLS": 0.03116068600929935,
+    "FCP_ms": 1202.1323,
+    "TBT_ms": 0,
+    "speedIndex_ms": 1202.1323
+  },
+  {
+    "file": "depois-home.json",
+    "score": 89,
+    "LCP_ms": 1352.4885,
+    "CLS": 0.0326143140961441,
+    "FCP_ms": 1352.4885,
+    "TBT_ms": 423,
+    "speedIndex_ms": 1352.4885
+  },
+  {
+    "file": "depois-projetos.json",
+    "score": 95,
+    "LCP_ms": 1205.0997000000002,
+    "CLS": 4.505310816313656e-06,
+    "FCP_ms": 1205.0997000000002,
+    "TBT_ms": 239.54984999999988,
+    "speedIndex_ms": 1205.0997000000002
+  }
+]

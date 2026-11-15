@@ -1,0 +1,254 @@
+{
+  "routesChecked": 13,
+  "axeRules": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "best-practice"
+  ],
+  "routeResults": [
+    {
+      "route": "/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 40,
+      "incomplete": [
+        "color-contrast"
+      ],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/diagnostico/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 45,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/projetos/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 40,
+      "incomplete": [
+        "color-contrast"
+      ],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/agenciamento-digital/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/criacao-de-sites/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/seo-local/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 37,
+      "incomplete": [
+        "color-contrast"
+      ],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/inteligencia-digital/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 36,
+      "incomplete": [
+        "color-contrast"
+      ],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/privacidade/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/termos/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/cookies/",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/404.html",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 35,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/prototipos/prototipo-a.html",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 30,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    },
+    {
+      "route": "/prototipos/prototipo-b.html",
+      "httpStatus": 200,
+      "violations": [],
+      "passes": 30,
+      "incomplete": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "mainCount": 1,
+      "h1Count": 1,
+      "heroHeadlineImageOverlap": null,
+      "pageErrors": []
+    }
+  ],
+  "keyboard": {
+    "/": {
+      "firstTab": {
+        "className": "skip-link",
+        "text": "Pular para o conteúdo"
+      },
+      "beforeOpen": {
+        "active": true,
+        "expanded": "false"
+      },
+      "afterEnter": {
+        "expanded": "true",
+        "open": "true",
+        "active": true
+      },
+      "afterEscape": {
+        "expanded": "false",
+        "open": "false",
+        "focusReturned": true
+      }
+    },
+    "/diagnostico/": {
+      "firstTab": {
+        "className": "skip-link",
+        "text": "Pular para o conteúdo"
+      },
+      "beforeOpen": {
+        "active": true,
+        "expanded": "false"
+      },
+      "afterEnter": {
+        "expanded": "true",
+        "open": "true",
+        "active": true
+      },
+      "afterEscape": {
+        "expanded": "false",
+        "open": "false",
+        "focusReturned": true
+      }
+    }
+  },
+  "sticky": {
+    "position": "sticky",
+    "top": "0px",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "scrollY": 1100
+  },
+  "sceneTransition": {
+    "found": true,
+    "scene": "paper",
+    "target": "paper"
+  },
+  "diagnostic": {
+    "submitDisabled": true,
+    "namedLabels": true,
+    "privacyLinkNearForm": true,
+    "statusLive": "polite"
+  },
+  "noJavaScript": {
+    "revealCount": 0,
+    "hiddenRevealCount": 0,
+    "h1Visible": true
+  },
+  "pageErrors": []
+}

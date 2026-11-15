@@ -1,0 +1,209 @@
+{
+  "lighthouse_version": "13.6.0",
+  "mode": "mobile simulated",
+  "baseline": {
+    "route_count": 8,
+    "public_page_count": 7,
+    "public_average": {
+      "accessibility": 99.7,
+      "seo": 100.0,
+      "best-practices": 100.0
+    },
+    "routes": [
+      {
+        "file": "404.html.json",
+        "url": "http://127.0.0.1:8000/404.html",
+        "scores": {
+          "accessibility": 100,
+          "seo": 54,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "agenciamento-digital.json",
+        "url": "http://127.0.0.1:8000/agenciamento-digital/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "criacao-de-sites.json",
+        "url": "http://127.0.0.1:8000/criacao-de-sites/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "diagnostico.json",
+        "url": "http://127.0.0.1:8000/diagnostico/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "home.json",
+        "url": "http://127.0.0.1:8000/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "inteligencia-digital.json",
+        "url": "http://127.0.0.1:8000/inteligencia-digital/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "projetos.json",
+        "url": "http://127.0.0.1:8000/projetos/",
+        "scores": {
+          "accessibility": 98,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "seo-local.json",
+        "url": "http://127.0.0.1:8000/seo-local/",
+        "scores": {
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      }
+    ]
+  },
+  "final": {
+    "route_count": 11,
+    "public_page_count": 10,
+    "public_average": {
+      "performance": 93.7,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "routes": [
+      {
+        "file": "404.html.json",
+        "url": "http://127.0.0.1:3000/404.html",
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "seo": 66,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "agenciamento-digital.json",
+        "url": "http://127.0.0.1:3000/agenciamento-digital/",
+        "scores": {
+          "performance": 89,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "cookies.json",
+        "url": "http://127.0.0.1:3000/cookies/",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "criacao-de-sites.json",
+        "url": "http://127.0.0.1:3000/criacao-de-sites/",
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "diagnostico.json",
+        "url": "http://127.0.0.1:3000/diagnostico/",
+        "scores": {
+          "performance": 93,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "home.json",
+        "url": "http://127.0.0.1:3000/",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "inteligencia-digital.json",
+        "url": "http://127.0.0.1:3000/inteligencia-digital/",
+        "scores": {
+          "performance": 93,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "privacidade.json",
+        "url": "http://127.0.0.1:3000/privacidade/",
+        "scores": {
+          "performance": 94,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "projetos.json",
+        "url": "http://127.0.0.1:3000/projetos/",
+        "scores": {
+          "performance": 91,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "seo-local.json",
+        "url": "http://127.0.0.1:3000/seo-local/",
+        "scores": {
+          "performance": 91,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      },
+      {
+        "file": "termos.json",
+        "url": "http://127.0.0.1:3000/termos/",
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "seo": 100,
+          "best-practices": 100
+        }
+      }
+    ]
+  }
+}

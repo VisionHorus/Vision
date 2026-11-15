@@ -1,48 +1,48 @@
-# Plano de implementação — Vision
+# Plano de revisão visual — Vision
 
-## Abordagem
+## Decisão atual
 
-Construir o site com HTML semântico, CSS e JavaScript nativos, sem Next.js nem framework obrigatório. Assim, os arquivos poderão ser abertos e editados diretamente no VS Code. Cada página terá seu próprio `index.html` estático na raiz ou em pasta de rota, com conteúdo visível no HTML inicial para SEO. CSS e JavaScript compartilhados ficarão em `assets/`. A estrutura será servida diretamente pela raiz do projeto, sem subpasta `public/`, para abrir com Live Server. Um servidor local simples, sem dependências externas, será documentado para testar as rotas amigáveis; também será possível servir a pasta do projeto com uma extensão como Live Server. O projeto será exportável como site estático. Sem domínio, não inventar URLs canônicas ou analytics; o contato usa o destino provisório de WhatsApp 000000000 solicitado, que deverá ser substituído pelo número oficial antes do atendimento real.
+A orientação mais recente do usuário substitui a direção clara/editorial usada na versão anterior. O site deve ter presença artística, tecnológica e dinâmica, com predomínio de fundos escuros em tons pensados, algumas áreas claras para contraste, laranja como acento, títulos de personalidade serifada/arredondada, botões quadrados e quadros de interface com vidro usado seletivamente. O robô humanoide de moletom âmbar que veio no novo `Sites.rar` será a peça do hero da home. Imagens fornecidas poderão ser usadas conforme agreguem à narrativa; não há obrigação de incluir todas.
 
-## Estrutura proposta
+O usuário aprovou a execução sem novas interrupções para aprovação visual. O estilo de Kantsuo foi enviado como referência de personalidade e ritmo, não como template: criar expressão e interação próprias para a Vision, sem reproduzir sua identidade, copy, ilustração ou composição. O usuário rejeitou o aspecto excessivamente branco, a manchete em sans condensada/geométrica simples e a apresentação estática com aparência de PDF.
 
-- `index.html`: homepage.
-- `agenciamento-digital/index.html`, `criacao-de-sites/index.html`, `seo-local/index.html`, `inteligencia-digital/index.html`, `projetos/index.html` e `diagnostico/index.html`: páginas estáticas nas rotas solicitadas.
-- `assets/css/`: tokens, estilos base, componentes/layouts e ajustes responsivos.
-- `assets/js/`: interações pequenas, como menu mobile, ano do rodapé e formulário que prepara uma conversa de WhatsApp para revisão e envio.
-- `assets/images/`: símbolo oficial original e imagens/capas de projetos.
-- `manus-routes.json`: declaração das rotas do site.
-- `README.md`: instalação/abertura local, estrutura, edição, SEO e publicação.
-- `.env.example`: somente se a configuração da entrega final precisar de variáveis; sem segredos reais.
+## Abordagem técnica
 
-## Direção visual aprovada pelo briefing
+Manter a base estática existente em HTML semântico, CSS modular e JavaScript nativo; não adicionar framework, biblioteca de animação, serviço externo nem analytics. O conteúdo principal, SEO e navegação permanecem no HTML inicial. Adicionar um controlador leve com `IntersectionObserver` para alternar o tom do canvas conforme as seções, revelar elementos ao entrarem na tela e escrever uma ou duas microfrases após rolagem; conteúdo deve permanecer disponível sem JavaScript e legível por leitores de tela. `prefers-reduced-motion` transforma animações em estados imediatos/estáticos.
 
-**Movimento:** minimalismo tecnológico com sofisticação corporativa, sem estética de painel futurista.
+Usar o robô fornecido como ativo principal da primeira dobra, comprimido para WebP com dimensão compatível com a exibição. Se a imagem tiver fundo escuro opaco, integrá-la à base escura com composição e mistura CSS testadas, sem remover detalhes por recorte destrutivo. Servir as versões otimizadas locais de `assets/images/` no Preview e no build estático; manter os arquivos-fonte fora da árvore do site. A silhueta fornecida aparece uma vez na seção editorial da home e a coruja abre a página de inteligência digital, sem repetir ativos como decoração genérica. Manter licença/crédito e pendências de direito em `content/image-credits.md`.
 
-**Princípios:** clareza primeiro; contraste e hierarquia disciplinados; tecnologia percebida pela precisão; interação útil e discreta.
+## Direção de arte
 
-**Cor:** base em carvão/azul profundo (#0B0F16 e #142238), texto claro (#F3F2EF), apoio cinza (#A5ACB8), laranja original da marca como destaque intencional e roxo dessaturado (#6956A5) apenas em detalhes raros. Preservar integralmente o símbolo anexado.
+- **Movimento:** editorial digital cinematográfico, experimental e acolhedor, com referências de estúdio criativo e interface de produto — conteúdo ativo e navegável, não uma sequência de slides ou uma folha impressa.
+- **Princípios:** (1) oferecer protagonismo à marca e ao produto do cliente; (2) combinar uma composição memorável com hierarquia de leitura impecável; (3) reservar animação para indicar aparecimento, conexão e mudança de contexto; (4) fazer cada seção ter um ritmo próprio sem perder unidade.
+- **Paleta:** base carvão `#090A10`, superfícies `#13161E` e grafite `#1B1E28`; texto marfim `#F4EFE8`; laranja queimado `#F47A40`; as cenas alternam ameixa, azul-fumaça, papel e brasa, sem introduzir outro acento. Contraste WCAG AA continua obrigatório.
+- **Layout:** hero assimétrico e de altura cinematográfica, com headline grande sobre/ao lado do robô e um board translúcido sobreposto; painel de sinal digital como interface, não como card genérico. Depois, alternar canvas escuro contínuo, uma ou duas passagens claras e quadros de projeto amplos. As transições de cor do canvas acontecem suavemente ao cruzar limites entre grupos de conteúdo; evitar regra horizontal em todas as seções.
+- **Elementos de assinatura:** o robô em escala editorial; boards de vidro localizados com bordas finas e tipografia de interface; composições texto/imagem que se cruzam sem perder leitura. Pode haver um único halo/gradiente radial discreto no hero e em até uma transição quando tiver função de luz; não usar ondas/blobs genéricos.
+- **Interação:** header transparente e sticky mantido; CTA principal quadrado, com movimento curto de seta/borda no hover e estados de foco; cartões/links com resposta tátil visual. O menu de celular mantém estados e foco corretos. Revelações são acionadas uma vez; microtypewriter aparece só em frases pequenas e jamais substitui ou anuncia fragmentos do conteúdo principal a tecnologias assistivas.
+- **Animação:** entrada de elementos em `opacity`/`transform` de baixa distância, mudança lenta de canvas, um indicador textual curto escrito por letras quando chega à seção e movimento opcional leve em um traço/constelação. Sem autoplay de vídeo, sem parallax obrigatório, sem movimento infinito para leitores que prefiram reduzir movimento, sem bloqueio de clique ou leitura.
+- **Tipografia:** `Fraunces` variável/local nos títulos — serifada expressiva, com formas mais redondas e escala fluida, pesos 600–800; `DM Sans` local para corpo, interface e botões; pequenos índices podem usar monospace local/de sistema. Evitar manter Barlow Condensed como fonte principal de manchetes. O texto do hero deve ser pesado, curto e legível sobre o recorte da imagem.
+- **Essência e voz:** presença digital para empresas locais e PMEs que precisam mostrar seus produtos/serviços, construir confiança e ampliar a chance de serem encontradas do Instagram ao Google e a respostas de IA. A voz é energética, clara e responsável. Exemplos de direção: “Sua empresa não pode ser um segredo.” e “Do Instagram à busca, tudo precisa apontar para o seu negócio.” Manter disclaimer de que SEO/IA não permitem prometer posição ou resultado.
+- **Wordmark:** preservar símbolo e nome Vision existentes; não desenhar ícone substituto. Usar wordmark tipográfico consistente com a nova fonte de interface.
 
-**Layout:** composição editorial assimétrica, grandes blocos tipográficos, grids abertos, espaço negativo e faixas de conteúdo que alternam alinhamento; evitar uma sucessão de grades genéricas centralizadas.
+## Escopo de execução
 
-**Elementos de assinatura:** linhas e nós digitais muito sutis; pequenos marcadores geométricos e molduras finas; detalhes em laranja ligados a ações e navegação.
+1. Atualizar este plano, `TODO.md` e `content/visual-brief.md` para esta revisão visual.
+2. Localizar, otimizar e incluir o robô do novo RAR; reorientar tokens, tipografia e componentes globais; acrescentar mudança de cena, reveal, microtypewriter e hover usando código nativo.
+3. Recriar a home com hero de grande personalidade, imagem do robô, quadro de sinal digital e composição de texto/imagem. Dar visuais próprios à faixa de prova, serviços, método, portfólio e CTA, aproveitando o conteúdo verdadeiro e preservando a ação “Solicitar diagnóstico”.
+4. Reaplicar o sistema às páginas existentes sem alterar URL, política legal, fluxo de dados do diagnóstico ou metadados corretos; personalizar o visual dos serviços, projetos, páginas legais, diagnóstico e 404 para que não pareçam páginas repetidas.
+5. Revisar contraste/teclado/ARIA, `prefers-reduced-motion`, overflow mobile, o funcionamento das transições e das animações com JavaScript desativado, e os estados hover/focus.
+6. Regenerar a saída estática, refazer checker/Nu/axe/Lighthouse e capturas específicas da versão escura. Atualizar relatório e crédito de imagens. Não publicar.
 
-**Interação e movimento:** transições curtas e funcionais, feedback claro, estados de foco visíveis e respeito a `prefers-reduced-motion`; nenhum efeito constante ou chamativo.
+## Organização
 
-**Tipografia:** sans-serif contemporânea e legível, com hierarquia expressiva e textos de leitura confortável; títulos firmes sem exagero, corpo claro e metadados compactos.
+- `assets/css/tokens.css`, `fonts.css`, `base.css`, `components.css`, `layouts.css`, `motion.css` e `responsive.css`: design tokens, famílias locais, canvas escuro, tipografia, vidro, componentes, ritmos por página, movimento e breakpoints.
+- `assets/js/site.js`: menu, ano, observação de cenas, reveal progressivo e microtypewriter acessível.
+- `assets/js/diagnostic-form.js`: fluxo de diagnóstico existente; continua separado da interação visual.
+- HTML de rotas existentes: novo hero/composições, cenas e atributos de movimento, mantendo conteúdo semântico e estado de dados.
+- `content/`: créditos, brief atualizado, capturas e relatório da revisão.
+- `scripts/`: geradores atuais e build estático; não há mudança de framework.
 
-**Essência da marca:** estrutura presença digital e tecnologia para negócios que precisam ser encontrados, comunicar valor e organizar oportunidades; personalidade estratégica, confiável e contemporânea.
+## Limites e pendências herdados
 
-**Voz:** direta, acessível, segura e comercial sem exagero. Exemplos: “Sua empresa merece ser encontrada.” e “Estratégia antes da tecnologia.”
-
-**Marca:** preservar o símbolo oficial laranja como imagem fornecida; usar “VISION” em tipografia neutra provisória, sem criar um novo logotipo definitivo nem alterar o símbolo.
-
-## Conteúdo, SEO e experiência
-
-A home seguirá as oito seções do briefing. As seis páginas internas terão conteúdo específico e conexões entre os serviços. O portfólio utilizará links externos e descrições verificadas nos sites de Tamo Junto Botequim, Lopes Tattoo e Eurogenesis; não atribuir resultados, métricas ou depoimentos à Vision. Usar assets reais dos próprios sites se forem acessíveis e adequados; caso contrário, utilizar capas gráficas sóbrias identificadas como representações visuais, nunca fotografia genérica apresentada como trabalho real.
-
-Implementar navegação acessível, responsividade mobile-first, HTML semântico, sitemap, robots, Open Graph/Twitter e dados estruturados apenas com fatos confirmados. Definir título e descrição exclusivos por rota. Como não há domínio informado, não emitir canonical ou `og:url` absolutos inventados; deixar a configuração documentada para quando o domínio real for fornecido. O formulário de diagnóstico abre uma conversa de WhatsApp pré-preenchida com as respostas para o visitante revisar e enviar; o site não armazena os dados. O número provisório é 000000000 e deve ser substituído pelo destino real para receber mensagens.
-
-## Execução e entrega
-
-Manter o código claro, editável e separado por responsabilidade, sem minificação e sem dependências desnecessárias. Incluir `README.md` com como abrir/servir localmente, estrutura, edição de conteúdo, imagens/logo, CSS/tokens, rotas, SEO e publicação. Preparar `.env.example` se aplicável. Entregar todas as páginas e assets, instruções e checklist, além de um ZIP editável do código-fonte. A publicação pública e o domínio não serão presumidos; a versão de preview e o pacote de código serão preparados, e as pendências de domínio, número oficial do WhatsApp e analytics serão registradas.
+O site continua sem publicação. Antes dela ainda é necessário preencher razão social, CNPJ, endereço, e-mail e canal LGPD; confirmar hospedagem/logs; revisar políticas com advogado; ativar número oficial de WhatsApp; confirmar por escrito os direitos/créditos das imagens de clientes e referências. Analytics permanece desligado. Nenhum prazo, preço, ranking, métrica, prova social ou resultado de venda será inventado. A validação auditiva com leitor de tela dedicado segue pendente por indisponibilidade no ambiente.

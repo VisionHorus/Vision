@@ -1,0 +1,211 @@
+[
+  {
+    "file": "404.html.json",
+    "route": "/404.html",
+    "url": "http://127.0.0.1:3000/404.html",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "seo": 66,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1433.3348999999998,
+      "CLS": 0.0002392669207290481,
+      "FCP_ms": 1433.3348999999998,
+      "TBT_ms": 177,
+      "speedIndex_ms": 1433.3348999999998,
+      "interactive_ms": 1922.3348999999998
+    }
+  },
+  {
+    "file": "agenciamento-digital.json",
+    "route": "/agenciamento-digital/",
+    "url": "http://127.0.0.1:3000/agenciamento-digital/",
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1493.2903000000001,
+      "CLS": 0,
+      "FCP_ms": 1493.2903000000001,
+      "TBT_ms": 422,
+      "speedIndex_ms": 1493.2903000000001,
+      "interactive_ms": 2175.2903
+    }
+  },
+  {
+    "file": "cookies.json",
+    "route": "/cookies/",
+    "url": "http://127.0.0.1:3000/cookies/",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1351.0083,
+      "CLS": 0.00838344187384694,
+      "FCP_ms": 1351.0083,
+      "TBT_ms": 162,
+      "speedIndex_ms": 1351.0083,
+      "interactive_ms": 1906.0083000000002
+    }
+  },
+  {
+    "file": "criacao-de-sites.json",
+    "route": "/criacao-de-sites/",
+    "url": "http://127.0.0.1:3000/criacao-de-sites/",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1411.98545,
+      "CLS": 0,
+      "FCP_ms": 1411.98545,
+      "TBT_ms": 335.0000000000001,
+      "speedIndex_ms": 1411.98545,
+      "interactive_ms": 2083.98545
+    }
+  },
+  {
+    "file": "diagnostico.json",
+    "route": "/diagnostico/",
+    "url": "http://127.0.0.1:3000/diagnostico/",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1226.1195,
+      "CLS": 0,
+      "FCP_ms": 1226.1195,
+      "TBT_ms": 303,
+      "speedIndex_ms": 1226.1195,
+      "interactive_ms": 1858.1195000000002
+    }
+  },
+  {
+    "file": "home.json",
+    "route": "/",
+    "url": "http://127.0.0.1:3000/",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1355.1938,
+      "CLS": 3.6422333773722004e-05,
+      "FCP_ms": 1355.1938,
+      "TBT_ms": 121.5,
+      "speedIndex_ms": 1355.1938,
+      "interactive_ms": 1807.481785
+    }
+  },
+  {
+    "file": "inteligencia-digital.json",
+    "route": "/inteligencia-digital/",
+    "url": "http://127.0.0.1:3000/inteligencia-digital/",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1418.9715,
+      "CLS": 0,
+      "FCP_ms": 1418.9715,
+      "TBT_ms": 311,
+      "speedIndex_ms": 1418.9715,
+      "interactive_ms": 2053.9715
+    }
+  },
+  {
+    "file": "privacidade.json",
+    "route": "/privacidade/",
+    "url": "http://127.0.0.1:3000/privacidade/",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1406.65435,
+      "CLS": 0.06747938615596125,
+      "FCP_ms": 1406.65435,
+      "TBT_ms": 262.9999999999999,
+      "speedIndex_ms": 1406.65435,
+      "interactive_ms": 2007.65435
+    }
+  },
+  {
+    "file": "projetos.json",
+    "route": "/projetos/",
+    "url": "http://127.0.0.1:3000/projetos/",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1491.1932,
+      "CLS": 4.28134428140047e-06,
+      "FCP_ms": 1491.1932,
+      "TBT_ms": 356.9999999999999,
+      "speedIndex_ms": 1491.1932,
+      "interactive_ms": 2100.1932
+    }
+  },
+  {
+    "file": "seo-local.json",
+    "route": "/seo-local/",
+    "url": "http://127.0.0.1:3000/seo-local/",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1201.5701,
+      "CLS": 4.172496545432662e-06,
+      "FCP_ms": 1201.5701,
+      "TBT_ms": 392,
+      "speedIndex_ms": 1216.5683377505486,
+      "interactive_ms": 2134.35515
+    }
+  },
+  {
+    "file": "termos.json",
+    "route": "/termos/",
+    "url": "http://127.0.0.1:3000/termos/",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "seo": 100,
+      "best-practices": 100
+    },
+    "metrics": {
+      "LCP_ms": 1356.0373,
+      "CLS": 0.006834693575867183,
+      "FCP_ms": 1356.0373,
+      "TBT_ms": 185,
+      "speedIndex_ms": 1356.0373,
+      "interactive_ms": 1927.0373
+    }
+  }
+]

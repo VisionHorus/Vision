@@ -1,79 +1,93 @@
-# TODO — Site Vision
+# TODO — Vision
 
-## 1. Estrutura estática, código-fonte e manutenção — Concluído
-- Construir o site com HTML semântico, CSS e JavaScript nativos; não exigir que a Vision saiba Next.js nem imponha framework de aplicação.
-- Separar páginas/rotas, componentes ou padrões reutilizáveis, estilos, lógica JavaScript, conteúdos editáveis, imagens/ícones/fontes, configurações e utilitários.
-- Organizar os arquivos em pastas claras; concentrar cores, tipografia e espaçamentos em tokens; facilitar a troca da logo, edição de textos e cadastro de projetos.
-- Evitar concentrar tudo em um arquivo; evitar minificação como única versão, duplicação desnecessária, dependências sem uso e soluções que dificultem manutenção.
-- Usar páginas HTML estáticas em rotas amigáveis e garantir que o conteúdo principal esteja no HTML sem depender de JavaScript para aparecer a mecanismos de busca.
-- Incluir arquivos editáveis e um README com estrutura e fluxo local simples em VS Code.
+Critérios do briefing original, organizados nas etapas autorizadas: Fase 1 + 1B, Fases 2 + 3, e Fases 4 + 5. Status não significa publicação.
 
-## 2. Identidade visual e direção de arte — Concluído
-- Usar o símbolo original enviado no ZIP como identidade obrigatória, preservando integralmente forma, proporções e cor; não redesenhar, simplificar, distorcer, contornar ou substituir.
-- Até receber versão completa/horizontal da marca, usar o símbolo fornecido e a palavra VISION em tipografia neutra, sem simular um logotipo definitivo; preparar cabeçalho/rodapé para substituição futura.
-- Aplicar direção escura, premium, minimalista-tecnológica e corporativa, com composição limpa, hierarquia clara, espaçamento generoso e detalhes criativos pontuais.
-- Usar carvão/azul-marinho profundos como fundo (#0B0F16, #142238), branco suave (#F3F2EF), cinza frio (#A5ACB8), laranja exato da logo como acento principal e roxo dessaturado (#6956A5) apenas como detalhe discreto.
-- Usar tipografia sans-serif contemporânea, ícones consistentes, cards com bordas discretas e movimentos leves, funcionais e rápidos; respeitar preferência por movimento reduzido.
-- Não usar as referências antigas em azul neon como direção; evitar neon excessivo, azul elétrico dominante, gradientes intensos, glow/sombras exagerados, partículas, redes luminosas, robôs, estética hacker/cyberpunk, animação constante e imagens genéricas decorativas.
+## Fase 0 — Diagnóstico inicial
 
-## 3. Homepage — Concluído
-- Criar homepage completa e responsiva com oito seções.
-- Hero: título “Sua empresa merece ser encontrada.”; texto “Construímos e estruturamos sua presença digital para ampliar sua visibilidade, fortalecer sua credibilidade e transformar pesquisas em oportunidades de negócio.”; CTAs “Solicitar diagnóstico” e “Conheça nossas soluções”; composição forte e legível em todos os tamanhos, com elemento abstrato discreto de rede/conexões.
-- Problema: título “Estar na internet não significa ser encontrado.”; explicar brevemente que presença digital desorganizada pode fazer a empresa perder oportunidades antes do primeiro contato e que informação, experiência e tecnologia precisam se conectar; mostrar desorganizado versus estruturado sem estatísticas inventadas.
-- Soluções: título “Uma presença digital. Três frentes integradas.”; cards Visibilidade (ser encontrado nas pesquisas), Web Experience (transformar visitas em contatos) e Intelligence (otimizar atendimento e processos), cada um com visual/ícone minimalista, título, frase de valor e link de serviço.
-- Método Vision: título “Estratégia antes da tecnologia.”; quatro etapas: Diagnóstico (entender cenário e oportunidades), Estratégia (definir prioridades/caminho), Implementação (desenvolver e integrar) e Evolução (acompanhar, ajustar e aprimorar); visual simples e elegante.
-- Projetos: título “Projetos que conectam negócios e experiências digitais.”; mostrar os três projetos reais descritos no item Portfólio, com imagem/capa, nome, categoria, descrição breve e link “Ver projeto”. Usar imagens reais dos sites quando apropriado e acessíveis; caso contrário, placeholder gráfico elegante e sem imagem genérica.
-- Diferenciais: título “Tecnologia com propósito. Estratégia com direção.”; incluir estratégia antes da implementação, soluções personalizadas, desenvolvimento e tecnologia integrados, SEO desde a estrutura e visão de longo prazo/melhoria contínua.
-- CTA final: título “Descubra o potencial da sua presença digital.”; texto convidando a analisar como a empresa aparece, se comunica e converte presença online em oportunidades; botão “Solicitar diagnóstico”.
-- Footer: espaço para marca Vision, navegação, links de soluções, contato pelo WhatsApp com o destino provisório solicitado, redes somente com links fornecidos, política de privacidade apenas se existente/criada, e ano de direitos autorais atualizado automaticamente se suportado. Não inventar endereço, telefone, email, CNPJ nem redes sociais.
+- [x] Executar `scripts/check_site.py` antes das alterações e guardar o resultado.
+- [x] Rodar Lighthouse mobile em todas as páginas de origem para acessibilidade, SEO e boas práticas, guardando as notas de base.
+- [x] Varrer `http`, scripts, fontes, analytics, iframes e formulários; registrar destinos externos e coleta de dados.
+- [x] Registrar problemas de contraste, imagens sem `alt`, headings, foco e CSS duplicado/morto.
+- [x] Entregar diagnóstico priorizado antes de alterar a aplicação.
 
-## 4. Páginas internas e navegação — Concluído
-- Criar rotas/páginas distintas: `/`, `/agenciamento-digital`, `/criacao-de-sites`, `/seo-local`, `/inteligencia-digital`, `/projetos` e `/diagnostico`.
-- Menu: Início, Soluções, Projetos, Sobre e botão “Solicitar diagnóstico”. Sobre pode navegar a uma seção institucional real; nenhum link deve apontar para conteúdo inexistente.
-- Cada página de serviço é landing page própria e não mera duplicação da homepage; incluir hero/proposta clara, problema resolvido, escopo do serviço, como funciona, benefícios possíveis sem garantia, relação com outros pilares e CTA de diagnóstico.
-- Agenciamento Digital explica visão integrada e conexão entre pilares.
-- Criação de Sites destaca sites personalizados, responsividade, UX, SEO, performance e conversão.
-- Google e SEO Local destaca Perfil da Empresa no Google, SEO local, reputação, consistência de dados e preparação para mecanismos de busca e pesquisa com IA, sem garantir ranking/posição.
-- Inteligência Digital apresenta agentes de IA, automações, follow-up, integrações e organização de processos, esclarecendo que cada solução depende do diagnóstico e da operação do cliente.
-- Projetos apresenta os três casos indicados com navegação clara e links externos.
-- Diagnóstico é uma página de conversão com explicação breve e formulário.
+## Fase 1 — Fundação global
 
-## 5. Portfólio factual — Concluído
-- Incluir Tamo Junto Botequim: `https://tamojuntobotequim.com.br/`. Descrever como presença digital para botequim/gastronomia e experiência de visita em Salvador; não inventar resultados da Vision.
-- Incluir Lopes Tattoo: `https://kfezin.github.io/lopes-tattoo-site/index.html`. O site identifica o trabalho de Ícaro Lopes com blackwork e fine line em Feira de Santana; descrevê-lo como site/portfólio de tatuagem e contato, sem inventar métricas.
-- Incluir Eurogenesis: `https://eurogenesis.com.br/`. O conteúdo apresenta pesquisa de origens, genealogia/documentos e serviços ligados à cidadania italiana e portuguesa; descrever o projeto institucional com base nisso, sem inventar resultados da Vision.
-- Usar apenas descrições compatíveis com conteúdo público confirmado; não afirmar aumento de faturamento, tráfego, conversão, rankings ou métricas sem dados fornecidos.
-- Não criar depoimentos, números, quantidade de projetos/clientes ou logos de clientes fictícios.
+- [x] Incorporar `visual-refresh.css` aos módulos CSS apropriados, manter tokens como fonte única para cores, espaçamentos e tipografia, remover o remendo visual e estilos sem uso.
+- [x] Hospedar WOFF2 localmente quando havia Google Fonts, com `font-display: swap`.
+- [x] Padronizar header e footer em todas as páginas. Footer com razão social, CNPJ, endereço e e-mail de contato, todos como `[PREENCHER: ...]`, e links para Privacidade, Termos e Cookies.
+- [x] Foco visível nos elementos interativos; skip link funcional; menu mobile operável por teclado, fecha com Escape e mantém `aria-expanded` correto; `lang="pt-BR"`; um único `h1` por página.
+- [x] `title` e `description` únicos, Open Graph e Twitter coerentes (`summary_large_image` quando houver imagem) e canonical.
+- [x] Incorporar a instrução adicional do usuário: header transparente, sem painel/faixa opaca, com marca/navegação e botões, sticky e acompanhando a rolagem; comportamento responsivo e sem ocultar conteúdo/foco.
 
-## 6. Formulário e conversão — Atualizado por solicitação posterior
-- O formulário inclui Nome, Empresa, Segmento, Site ou Instagram, WhatsApp e principal dificuldade/objetivo; valida os campos e permanece responsivo.
-- Ao enviar, montar a mensagem com as respostas e abrir o WhatsApp em `https://wa.me/000000000` para revisão e envio pelo visitante; não armazenar respostas no site.
-- Manter um atalho direto para o WhatsApp na página de diagnóstico/contato e remover mensagens que indiquem formulário em preparação ou envio indisponível.
-- O número `000000000` é provisório, conforme solicitado; substituir por número real em formato internacional antes de esperar conversas com uma conta existente.
+## Fase 1B — Sistema visual e protótipos
 
-## 7. SEO técnico, GEO e indexabilidade — Parcial (domínio/publicação necessários para confirmar sitemap e robots em produção)
-- Usar HTML semântico, heading hierarchy correta H1/H2/H3, URLs simples, conteúdo útil/original e links internos entre serviços, projetos e diagnóstico.
-- Implementar title e meta description exclusivos por página, Open Graph/Twitter, sitemap XML, robots.txt, imagens otimizadas com nomes descritivos e alt adequado e Schema.org somente com dados reais.
-- Preparar breadcrumbs quando fizerem sentido. Manter páginas renderizadas estaticamente, com conteúdo e metadados no HTML inicial sem exigir execução de JavaScript.
-- Preparar a compreensão por mecanismos de busca/IA: explicar quem é a Vision, o que oferece, problemas que resolve, público, relação entre serviços, projetos verificáveis e caminho para diagnóstico; usar conteúdo contextualizado e consistente.
-- Não prometer aparição em ChatGPT/Gemini ou ranking em mecanismos de busca, nem repetir palavras-chave artificialmente.
-- Não inventar domínio: até que o domínio seja informado, não publicar canonical nem og:url absoluto falso; documentar a configuração pendente. Preparar GA4 e Search Console sem IDs fictícios.
+- [x] Estudar as referências `ref 1–8` e `savee-01–05`, e criar `content/visual-brief.md` com três adjetivos, análise de cada referência legível (o que usar/evitar), paleta e contraste, tipografia, imagens e padrões de layout. Usar princípios, não cópia.
+- [x] Atualizar `tokens.css` para cores, tipografia, espaçamentos, raios, sombras e durações; preservar nome/símbolo Vision e derivar um único acento do símbolo.
+- [x] Criar protótipos separados dentro de `prototipos/`, sem substituir a home: ambos têm header, hero, CTA “Solicitar diagnóstico” e faixa de prova de projetos reais; A escuro com acento; B claro/texturizado com acento.
+- [x] Garantir que a tipografia seja versátil para web e composição editorial/social semelhante a post de Instagram: manchete expressiva, apoio conciso, alinhamento e margem legíveis em telas estreitas.
+- [x] Usar imagens de referência fornecidas com origem registrada; manter fotos de referência nos protótipos e fora das rotas indexáveis e do build público; imagens fornecidas não implicam direito automático de publicação.
+- [x] Evitar gradientes em ondas/blobs, neon/glow, glassmorphism, 3D genérico, imagens geradas por IA sem curadoria, texto fino/cinza em fundo escuro, mais de um acento, ícones em círculos, layouts repetitivos e cópia literal. Sem autoplay; respeitar `prefers-reduced-motion`.
+- [x] Escolher a direção clara/editorial para seguir sem interromper por aprovação intermediária, conforme a autorização posterior do usuário. É a premissa adotada para execução e pode ser alterada pelo usuário.
 
-## 8. Responsividade, acessibilidade, performance e comportamento — Concluído
-- Fazer layout mobile-first e responsivo para celular, tablet e desktop; testar navegação móvel.
-- Assegurar navegação acessível por teclado, foco visível, contrastes suficientes, estrutura semântica, rótulos e textos alternativos adequados.
-- Priorizar carregamento rápido, imagens otimizadas, lazy loading quando adequado, JavaScript apenas onde necessário, microinterações rápidas e funcionamento em conexões móveis.
-- Tratar página inexistente com página 404 real; todos os links internos/externos devem funcionar e botões não podem prometer ação que não executam.
+## Fases 2 + 3 — Páginas legais e formulário
 
-## 9. Documentação, expansão e pendências — Concluído (dados faltantes da Vision listados)
-- README completo deve incluir tecnologias, pré-requisitos, como abrir/servir localmente, instalação (se necessária), geração/build de produção, publicação/deploy, estrutura de pastas, onde editar textos, cores/tipografia, logo/imagens, adicionar projetos/páginas, configurar SEO/metadados e integrações/variáveis de ambiente.
-- Incluir `.env.example` se houver variáveis; nunca inserir credenciais reais.
-- Estruturar para adicionar novas páginas de serviço, projetos, artigos, integrações, formulários, automações e funcionalidades sem reconstruir seções inteiras.
-- Na entrega, listar claramente informações ainda dependentes da Vision: versão horizontal/completa da marca, domínio, contatos/redes, IDs de analytics/Search Console, número oficial de WhatsApp para substituir o destino provisório, integração de CRM e outros dados comerciais necessários.
-- Distinguir integrações implementadas das que ficaram apenas preparadas.
+- [x] Criar `/privacidade/`, `/termos/` e `/cookies/` em português claro, com `[PREENCHER: ...]` onde faltam dados e comentário HTML “Revisar com advogado antes de publicar”.
+- [x] Privacidade/LGPD: explicar controlador, dados coletados, finalidade, base legal, compartilhamento/ferramenta que recebe o formulário, retenção, direitos do titular do art. 18 e canal de contato para exercer direitos.
+- [x] Termos: explicar regras de uso, propriedade intelectual, limitação de responsabilidade e foro; não inventar dados empresariais.
+- [x] Cookies: corresponder à varredura real. Analytics de plataforma e selo/scripts estão desativados; não foi encontrado tracking do site; declarar isso e não criar banner. Manter ressalva sobre logs técnicos e serviços externos.
+- [x] Criar política de reembolso somente se houver venda direta pelo site; como não há venda direta, não criar e registrar essa decisão.
+- [x] Refatorar `assets/js/diagnostic-form.js` e `/diagnostico/index.html` para coletar somente o necessário, remover campos supérfluos, informar finalidade junto ao botão e linkar a política de privacidade.
+- [x] Checkbox de aceite não é usado. Se um checkbox vier a ser necessário, ele nunca deve iniciar pré-marcado.
+- [x] Usar labels reais, erros claros, feedback acessível em `aria-live`, `autocomplete` adequado e proteção honeypot sem CAPTCHA de terceiros.
+- [x] Explicar destino, retenção e exclusão: dados não são armazenados pelo site; a mensagem só é preparada localmente e é enviada voluntariamente pela ferramenta WhatsApp. Não ativar até receber/testar o número oficial, sem inventar destinatário.
 
-## 10. Validação e entrega — Parcial (Preview e fonte ZIP prontos; publicação pública não solicitada)
-- Entregar site desenvolvido e navegável, fonte completa/editável, todas as páginas e componentes/padrões reutilizáveis, responsividade verificada, SEO técnico, assets organizados, instruções de execução/deploy e checklist final.
-- Testar links internos/externos, navegação mobile, formulário e estados de erro, títulos/metadados, sitemap/robots, dados estruturados, ausência de conteúdo fictício, legibilidade e performance.
-- Confirmar que o site pode ser executado seguindo o README.
-- Disponibilizar um ZIP ou repositório do código-fonte conforme as possibilidades da plataforma; não presumir publicação pública nem domínio sem confirmação/dados necessários.
+## Fase 4 — Reformulação das páginas
+
+- [x] Reformular na ordem prescrita: `/diagnostico/` → `/projetos/` → home → `/agenciamento-digital/` → `/criacao-de-sites/` → `/seo-local/` → `/inteligencia-digital/` → `404.html`.
+- [x] Para cada página, definir objetivo e ação principal; reescrever copy concreta e humana para uma agência de Salvador falando com donos de negócios.
+- [x] Apagar texto sobre a própria página/redação; remover frases vazias/genéricas, frases simétricas de efeito, listas de três itens por hábito, repetição do mesmo esqueleto de seções, mistura de idiomas, travessões excessivos, adjetivos vagos e promessas sem prova.
+- [x] Explicar que a Vision ajuda empresas a venderem seus produtos/serviços e organiza presença para descoberta em Instagram, Google e inteligências artificiais; comunicar que um site profissional transmite confiança; deixar automações em segundo plano.
+- [x] Não garantir primeiro lugar no Google, recomendação por IA ou resultados comerciais; usar placeholders para prazos, preços, métricas e dados não fornecidos.
+- [x] Corrigir HTML semântico/headings, `alt`, contraste (4,5:1 para texto normal; 3:1 para texto grande), foco visível e teclado. Declarar `width`/`height`, usar `loading="lazy"` abaixo da dobra e WebP quando apropriado.
+- [x] Aplicar o sistema visual sem repetir o esqueleto de uma página a outra; preservar URLs existentes (nenhum redirecionamento foi necessário).
+- [x] Manter catálogo com os cinco projetos exigidos: Tamo Junto Botequim, Lopes Tattoo, Eurogenesis, Astromentor e Kantsuo (`https://kfezin.github.io/sitekantsuo/`, imagem `kantsuo.webp`). Atualizar `content/projects.json` e gerar blocos `PROJECTS`/JSON-LD pelo script, sem editar esses blocos gerados à mão.
+- [x] Remover `eurogenesis-citizenship.jpg` vazio (0 bytes) e usar cartão tipográfico para Eurogenesis; registrar origem/direitos das imagens em `content/image-credits.md`. Capturas de clientes e imagens de referência exigem confirmação de autorização por escrito antes de publicação.
+
+## Fases 4 + 5 — Verificação final agrupada
+
+- [x] Executar `scripts/build_projects.py`, `scripts/generate_sitemap.py` e `scripts/check_site.py`, sincronizando sitemap, catálogo, rotas e páginas.
+- [x] Validar HTML com Nu Validator; rodar axe-core; testar teclado/menu em pelo menos duas páginas; inspecionar roles, nomes e headings na árvore de acessibilidade do Chromium nas páginas Home e Diagnóstico.
+- [x] Comparar notas Lighthouse mobile de acessibilidade, SEO e boas práticas com a linha de base; guardar 42 capturas da primeira dobra: antes/depois desktop e celular nas oito rotas antigas, mais novas páginas legais e protótipos.
+- [x] Fechar comparativo Lighthouse mobile de desempenho, registrar LCP/CLS de Home, Diagnóstico e Projetos no relatório final; LCP ficou abaixo de 2,5 s e CLS abaixo de 0,1 nas três rotas.
+- [ ] Testar manualmente com um leitor de tela dedicado em pelo menos duas páginas. A árvore de acessibilidade do Chromium e o teste de teclado foram verificados, mas não substituem o uso auditivo de leitor de tela.
+- [x] Criar seis commits locais claros por página ou tarefa no branch `refactor/base`.
+- [x] Integrar a branch a `origin/main` e registrar o checkpoint gerenciado; `publishing.auto_publish` permaneceu desligado e nenhuma publicação foi solicitada.
+- [x] Entregar `relatorio-final.md` com mudanças por página, os 19 placeholders únicos, pendências que dependem do usuário/advogado, comparação Lighthouse e itens fora do escopo.
+
+### Pendências antes de uma eventual publicação
+
+- Preencher razão social, CNPJ, endereço, e-mail de contato e canal oficial para solicitações LGPD.
+- Confirmar com advogado textos legais, foro, responsabilidade, titularidade/licenças e exclusões juridicamente válidas.
+- Confirmar com provedor de hospedagem/CDN quais logs técnicos são coletados e seu prazo de retenção.
+- Configurar e testar número oficial do WhatsApp para habilitar envio do formulário.
+- Confirmar direitos e créditos das imagens dos projetos/clientes e das imagens de referência usadas nos protótipos.
+- O site não foi publicado; essa entrega não inclui publicação/indexação.
+
+## Revisão visual v2 — nova orientação do usuário
+
+A preferência anterior por uma direção B clara foi explicitamente substituída: esta revisão passa a orientar o site público. A implementação e as validações v2 foram concluídas, com a limitação do reenvio Nu por HTTP 429 registrada no relatório. O push de `origin/main` foi aceito, mas não retornou recibo/card de Version history; por isso, a confirmação formal do checkpoint permanece pendente. A publicação automática está desligada.
+
+- [x] Reorientar todas as páginas para uma identidade predominantemente escura, artística e tecnológica, com tons cuidadosos e seções claras ocasionais para contraste. Evitar uma apresentação estática com cara de PDF.
+- [x] Trocar a fonte principal de manchetes por uma serifada expressiva/arredondada (Fraunces variável local), manter DM Sans no corpo e criar uma hierarquia de títulos mais pesada, fluida e bonita em layouts web e composições semelhantes a posts de Instagram.
+- [x] Usar o robô em moletom âmbar enviado no RAR como arte principal da primeira dobra, integrando texto e imagem de modo intencional; usar outras imagens do usuário somente quando servirem à seção, sem obrigação de colocar todas.
+- [x] Criar boards/painéis com acabamento de vidro apenas onde fizer sentido, mantendo texto/foco legíveis e fallback sem `backdrop-filter`.
+- [x] Manter botões quadrados e acrescentar hovers responsivos com movimento curto e estados de teclado/foco visíveis.
+- [x] Dar composição visual e ritmo próprios a cada seção: imagem sobreposta a parte do texto quando legível, algumas seções claras, superfícies escuras variadas e ritmo editorial/tecnológico sem repetir grids de cards.
+- [x] Fazer o fundo transitar suavemente de tonalidade quando a rolagem alcança outra cena/seção; não dividir sistematicamente cada seção com uma linha ou uma troca abrupta de cor.
+- [x] Introduzir animações discretas acionadas ao entrar na viewport; incluir uma ou duas microfrases em efeito typewriter após a seção aparecer, sem ocultar conteúdo quando JS faltar nem inundar leitores de tela.
+- [x] Usar no máximo poucos gradientes localizados quando houver função clara de luz/realce; evitar ondas/blobs genéricos, glow excessivo e movimentos sem propósito.
+- [x] Implementar todas as interações com HTML/CSS/JavaScript nativos, honrar `prefers-reduced-motion` e manter navegação, hover e foco funcionando por teclado e em mobile.
+- [x] Aplicar a direção às páginas existentes sem alterar rotas, copy aprovada, política de dados ou promessa comercial; manter SEO, contraste WCAG AA e projeto real como prova.
+- [x] Atualizar brief visual, créditos, capturas desktop/mobile, checker, axe, HTML Validator e métricas Lighthouse depois do redesign; registrar commits claros por tarefa.
+- [x] Enviar o commit de entrega a `origin/main` sem publicar; o push foi aceito e `publishing.auto_publish` permaneceu desligado.
+- [ ] Confirmar que o commit aceito em `main` consta na Version history como checkpoint gerenciado. A sessão não recebeu cartão/recibo após o push; não repetir o push apenas para tentar obter o mesmo comprovante.

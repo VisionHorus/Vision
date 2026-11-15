@@ -22,27 +22,45 @@ def catalog() -> list[dict]:
 def render_card(project: dict, full: bool) -> str:
     name = esc(project["name"])
     url = esc(project["url"])
-    image = esc(project["image"])
-    alt = esc(project["imageAlt"])
+    slug = esc(project["slug"])
     category = esc(project["category"])
     description = esc(project["description"] if full else project["shortDescription"])
     link_label = "Ver site do projeto" if full else "Ver projeto"
     media_modifier = " project-card__media--euro" if project["slug"] == "eurogenesis" else ""
-    source_note = f'<p class="project-source-note">Fonte: site público de {name}.</p>' if full else ""
-    return f'''<article class="project-card">
+    image_name = project.get("image")
+    if image_name:
+        image_path = ROOT / "assets" / "images" / image_name
+        if not image_path.is_file() or image_path.stat().st_size == 0:
+            raise SystemExit(f"Imagem de projeto ausente ou vazia: {image_path}")
+        width = int(project["imageWidth"])
+        height = int(project["imageHeight"])
+        if width < 1 or height < 1:
+            raise SystemExit(f"Dimensões inválidas para {name}")
+        image_markup = f'<div class="project-card__media{media_modifier}"><img src="/assets/images/{esc(image_name)}" alt="{esc(project["imageAlt"])}" width="{width}" height="{height}" loading="lazy" decoding="async"></div>'
+    else:
+        image_markup = f'<div class="project-card__media{media_modifier}" role="img" aria-label="Destaque tipográfico de {name}; imagem do projeto não disponível no pacote"><span class="project-card__media-label" aria-hidden="true">{name}</span></div>'
+    return f'''<article class="project-card" id="project-{slug}">
   <a href="{url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir o site de {name}, em nova aba">
-    <div class="project-card__media{media_modifier}"><img src="/assets/images/{image}" alt="{alt}" width="{int(project['imageWidth'])}" height="{int(project['imageHeight'])}" loading="lazy" decoding="async"></div>
+    {image_markup}
   </a>
-  <div class="project-card__body"><span class="project-card__category">{category}</span><h3>{name}</h3><p>{description}</p><a class="text-link" href="{url}" target="_blank" rel="noopener noreferrer">{link_label}</a>{source_note}</div>
+  <div class="project-card__body"><span class="project-card__category">{category}</span><h3>{name}</h3><p>{description}</p><a class="text-link" href="{url}" target="_blank" rel="noopener noreferrer">{link_label}</a></div>
 </article>'''
 
 
-def update_cards(relative_path: str, full: bool) -> None:
+def update_cards(relative_path: str, full: bool, limit: int | None = None, exclude_slugs: set[str] | None = None) -> None:
     path = ROOT / relative_path
     source = path.read_text(encoding="utf-8")
     if not CARD_MARKER.search(source):
         raise SystemExit(f"Project card markers not found in {path}")
-    cards = "\n".join(render_card(item, full) for item in catalog())
+    projects = catalog()
+    if limit is not None:
+        projects = projects[:limit]
+    if exclude_slugs:
+        excluded = set(exclude_slugs)
+        projects = [project for project in projects if project["slug"] not in excluded]
+        if not projects:
+            raise SystemExit(f"No project cards remain for {path}")
+    cards = "\n".join(render_card(item, full) for item in projects)
     replacement = f"<!-- PROJECTS:START -->\n{cards}\n      <!-- PROJECTS:END -->"
     path.write_text(CARD_MARKER.sub(lambda _: replacement, source, count=1), encoding="utf-8")
     print(f"Updated cards in {path.relative_to(ROOT)}")
@@ -70,6 +88,6 @@ def update_schema() -> None:
 
 
 if __name__ == "__main__":
-    update_cards("index.html", full=False)
-    update_cards("projetos/index.html", full=True)
+    update_cards("index.html", full=False, limit=3)
+    update_cards("projetos/index.html", full=True, exclude_slugs={"tamo-junto-botequim"})
     update_schema()

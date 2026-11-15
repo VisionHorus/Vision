@@ -28,11 +28,31 @@
     "slug": "eurogenesis",
     "category": "Institucional · pesquisa de origens",
     "url": "https://eurogenesis.com.br/",
-    "image": "eurogenesis-citizenship.jpg",
-    "imageWidth": 640,
-    "imageHeight": 427,
-    "imageAlt": "Bandeiras da União Europeia e da Itália usadas na apresentação de cidadania da Eurogenesis",
     "shortDescription": "Site institucional sobre pesquisa de origens e documentos, com serviços ligados à cidadania italiana e portuguesa.",
     "description": "Site institucional que apresenta pesquisa de origens e documentos e serviços relacionados à cidadania italiana e portuguesa."
+  },
+  {
+    "name": "Astromentor",
+    "slug": "astromentor",
+    "category": "Plataforma · astrologia e autoconhecimento",
+    "url": "https://www.astromentor.com.br/",
+    "image": "astromentor-case.jpg",
+    "imageAlt": "Página inicial do Astromentor com o título O céu também é sobre você e a ilustração de uma figura azul",
+    "shortDescription": "Site de astrologia como ponto de partida para perguntas mais honestas e reflexões com contexto, com identidade visual própria e foco em autoconhecimento.",
+    "description": "Site de astrologia como ponto de partida para perguntas mais honestas e reflexões com contexto, com identidade visual própria e foco em autoconhecimento.",
+    "imageWidth": 192,
+    "imageHeight": 192
+  },
+  {
+    "name": "Kantsuo",
+    "slug": "kantsuo",
+    "category": "Portfólio · design e direção de arte",
+    "url": "https://kfezin.github.io/sitekantsuo/",
+    "image": "kantsuo.webp",
+    "imageWidth": 830,
+    "imageHeight": 830,
+    "imageAlt": "Ilustração monocromática do designer de perfil, segurando um celular e usando uma jaqueta ilustrada, no portfólio Kantsuo.",
+    "shortDescription": "Portfólio de design de Salvador, com identidade de universo artístico para cardápios, sites, apps e social media.",
+    "description": "Site de portfólio para o designer Kantsuo, de Salvador, organizado como um universo de arte e design dividido em distritos. Apresenta trabalhos de social media, design de cardápio, direção de arte, web e app design, com identidade visual autoral e chamadas diretas para contato via WhatsApp."
   }
 ]

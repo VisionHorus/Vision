@@ -45,16 +45,17 @@ class PageParser(HTMLParser):
             self._heading = tag
             self._heading_parts = []
         if tag == "meta":
-            name = attrs.get("name", "").lower()
-            prop = attrs.get("property", "").lower()
+            name = (attrs.get("name") or "").lower()
+            prop = (attrs.get("property") or "").lower()
+            content = attrs.get("content") or ""
             if name:
-                self.meta_names[name] = attrs.get("content", "")
+                self.meta_names[name] = content
             if prop:
-                self.meta_properties[prop] = attrs.get("content", "")
+                self.meta_properties[prop] = content
             if name == "description":
-                self.description = attrs.get("content", "")
+                self.description = content
             if name == "keywords":
-                self.keywords = attrs.get("content", "")
+                self.keywords = content
         if tag == "script" and attrs.get("type") == "application/ld+json":
             self._in_json = True
             self._json_parts = []
@@ -158,10 +159,18 @@ def main():
 
     diagnostic = (PUBLIC / "diagnostico" / "index.html").read_text(encoding="utf-8")
     form_script = (PUBLIC / "assets" / "js" / "diagnostic-form.js").read_text(encoding="utf-8")
-    if 'data-diagnostic-form' not in diagnostic or 'type="submit">Continuar no WhatsApp' not in diagnostic:
-        errors.append("diagnostico: WhatsApp submit action should be available")
-    if 'https://wa.me/${whatsappNumber}' not in form_script or 'const whatsappNumber = "000000000"' not in form_script:
-        errors.append("diagnostico: form should open WhatsApp with the configured destination")
+    if 'data-diagnostic-form' not in diagnostic or 'data-whatsapp-submit' not in diagnostic:
+        errors.append("diagnostico: diagnostic form and WhatsApp submit control are required")
+    if 'const whatsappNumber = ""' not in form_script:
+        errors.append("diagnostico: do not ship an invented WhatsApp destination")
+    if 'const destinationIsConfigured = /^\\d{10,15}$/.test(whatsappNumber);' not in form_script:
+        errors.append("diagnostico: only a valid international WhatsApp number may activate the button")
+    if 'if (submitButton) submitButton.disabled = !destinationIsConfigured;' not in form_script:
+        errors.append("diagnostico: submit must stay disabled until an official WhatsApp destination is configured")
+    if 'https://wa.me/${whatsappNumber}' not in form_script or 'if (!destinationIsConfigured)' not in form_script:
+        errors.append("diagnostico: form must guard the WhatsApp redirect with the configured destination")
+    if "000000000" in form_script:
+        errors.append("diagnostico: placeholder WhatsApp numbers must never be used as a destination")
     if "em preparação" in diagnostic.lower() or "envio ainda não disponível" in diagnostic.lower():
         errors.append("diagnostico: remove obsolete under-construction contact notices")
 
@@ -200,7 +209,7 @@ def main():
         print("\n".join(errors))
         raise SystemExit(1)
     print(f"PASS: {len(route_pages)} routes; SEO thresholds, social metadata, JSON-LD, links and fragments verified.")
-    print("WhatsApp contact form and links verified in source. Absolute canonical/sitemap URLs need a real domain; the WebDev published gateway handles sitemap/robots, while this Preview returned 404 for those paths.")
+    print("WhatsApp destination remains disabled until a real number is supplied. Canonical, sitemap and robots are generated for the configured public origin; publishing remains separate.")
 
 
 if __name__ == "__main__":

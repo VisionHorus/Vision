@@ -1,0 +1,47 @@
+{
+  "normal": {
+    "before": {
+      "count": 2,
+      "secondInViewport": false,
+      "secondText": "NÃO É SÓ ESTAR ONLINE",
+      "secondTyped": false,
+      "screenReaderCopy": "Não é só estar online",
+      "ariaHidden": "true"
+    },
+    "during": {
+      "typed": "true",
+      "text": "NÃO",
+      "length": 3
+    },
+    "after": {
+      "typed": "true",
+      "done": true,
+      "text": "NÃO É SÓ ESTAR ONLINE",
+      "ariaHidden": "true",
+      "screenReaderCopy": "Não é só estar online"
+    }
+  },
+  "reducedMotion": {
+    "matches": true,
+    "motionClass": false,
+    "texts": [
+      "PRESENÇA DIGITAL COM DIREÇÃO",
+      "NÃO É SÓ ESTAR ONLINE"
+    ],
+    "allComplete": true,
+    "caretHidden": true,
+    "buttonTransition": "1e-05s"
+  },
+  "noJavaScript": {
+    "count": 2,
+    "texts": [
+      "PRESENÇA DIGITAL COM DIREÇÃO",
+      "NÃO É SÓ ESTAR ONLINE"
+    ],
+    "allComplete": true,
+    "screenReaderCopies": [
+      "Presença digital com direção",
+      "Não é só estar online"
+    ]
+  }
+}
