@@ -46,17 +46,17 @@
 .section-intro__aside p { max-width: 31ch; }
 .home-origin { display: grid; grid-template-columns: minmax(0,1.12fr) minmax(240px,.88fr); align-items: center; gap: clamp(35px,7vw,105px); }
 .home-origin__copy h2 { max-width: 12ch; }
-.home-shadow-art { position: relative; justify-self: end; width: min(100%, 380px); aspect-ratio: 1; margin: 0; overflow: hidden; background: #F57B24; box-shadow: 22px 22px 0 rgba(244,122,64,.11); }
-.home-shadow-art img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.home-shadow-art { position: relative; justify-self: end; width: min(100%, 380px); aspect-ratio: 1; margin: 0; overflow: hidden; background: var(--color-orange); box-shadow: 22px 22px 0 #ffaa0013; }
+.home-shadow-art img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: additive; }
 .home-shadow-art__caption { position: absolute; right: 14px; bottom: 14px; left: 14px; padding: 11px 13px; background: rgba(32,14,10,.78); color: #FFF1E6; font-family: var(--font-mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; backdrop-filter: blur(8px); }
 
 .problem-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 36px; }
 .contrast-card { position: relative; min-height: 250px; padding: clamp(24px,3.4vw,40px); overflow: hidden; border: 1px solid var(--color-border); background: var(--color-surface); }
 .contrast-card--structured { background: var(--color-surface-raised); }
-.contrast-card__label { margin-bottom: 25px; color: var(--color-subtle); font-family: var(--font-mono); font-size: .63rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
-.contrast-card h3 { max-width: 17ch; font-size: clamp(1.8rem,2.8vw,2.8rem); }
-.contrast-card__flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 19px; }
-.flow-chip { padding: 7px 10px; border: 1px solid var(--color-border-strong); color: var(--color-muted); font-family: var(--font-mono); font-size: .68rem; }
+.contrast-card__label { margin-bottom: 25px; color：var(--color-subtle); font-family: var(--font-mono); font-size: .63rem; font-weight：600; letter-spacing：.1em; text-transform：uppercase; }
+.contrast-card h3 { max-width：17ch; font-size：clamp(1.8rem,2.8vw,2.8rem); }
+.contrast-card__flow { display：flex; flex-wrap：wrap; align-items：center; gap：10px; margin-top：19px; }
+.flow-chip { padding：7px 10px; border：1px solid var(--color-border-strong); color：var(--color-muted); font-family：var(--font-mono); font-size：.68rem; }
 .flow-arrow { color: var(--color-orange); }
 
 .services-grid { display: grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap: 15px; }
@@ -103,8 +103,8 @@ body[data-page="intelligence"] .page-hero::before, body[data-page="intelligence"
 .intelligence-hero-art img { display: block; width: 100%; max-height: 350px; aspect-ratio: 4 / 5; object-fit: contain; mix-blend-mode: screen; }
 .intelligence-hero-art figcaption { position: absolute; right: 10px; bottom: 10px; left: 10px; display: grid; gap: 4px; padding: 11px 13px; background: rgba(9,10,16,.9); color: #F4EFE8; font-family: var(--font-display); font-size: 1.08rem; font-weight: 650; line-height: 1.15; }
 .intelligence-hero-art__label { color: #D7C7BB; font-family: var(--font-mono); font-size: .58rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; }
-body[data-page="sites"] .page-hero::after { width: min(34vw,420px); aspect-ratio: 1.35; top: 32%; right: 3%; border-radius: 0; transform: perspective(800px) rotateY(-18deg) rotateX(7deg); box-shadow: 0 0 0 13px rgba(244,122,64,.08),0 0 0 27px rgba(244,122,64,.035); }
-body[data-page="seo"] .page-hero::before { background: radial-gradient(circle, rgba(244,122,64,.16), transparent 66%); }
+body[data-page="sites"] .page-hero::after { display: none; }
+body[data-page="sites"] .page-hero::before { display: none; }
 body[data-page="agency"] .page-hero::after { top: 39%; right: 8%; width: 13px; height: 13px; border-radius: 50%; background: var(--color-orange); box-shadow: -95px 72px 0 -3px var(--color-orange), 42px 145px 0 -3px var(--color-orange); }
 
 .service-layout { display: grid; grid-template-columns: minmax(240px,.72fr) minmax(0,1.28fr); align-items: start; gap: clamp(40px,8vw,125px); }

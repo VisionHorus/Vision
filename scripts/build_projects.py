@@ -26,7 +26,7 @@ def render_card(project: dict, full: bool) -> str:
     category = esc(project["category"])
     description = esc(project["description"] if full else project["shortDescription"])
     link_label = "Ver site do projeto" if full else "Ver projeto"
-    media_modifier = " project-card__media--euro" if project["slug"] == "eurogenesis" else ""
+    media_modifier = ""
     image_name = project.get("image")
     if image_name:
         image_path = ROOT / "assets" / "images" / image_name

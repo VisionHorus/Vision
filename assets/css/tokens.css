@@ -7,14 +7,14 @@
   --color-text: #F4EFE8;
   --color-muted: #C9C1B9;
   --color-subtle: #A39AA0;
-  --color-orange: #F47A40;
+  --color-orange: #ffab00;
   --color-accent: var(--color-orange);
   --color-ink: #F7F0E7;
   --color-ink-inverse: #111014;
   --color-border: rgba(244, 239, 232, 0.15);
   --color-border-strong: rgba(244, 239, 232, 0.28);
   --color-success: #83C99A;
-  --color-focus: #FFD09C;
+  --color-focus: #ffab00;
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "DM Sans", Inter, "Aptos", "Segoe UI", Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
