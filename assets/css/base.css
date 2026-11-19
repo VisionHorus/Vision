@@ -60,7 +60,7 @@ h1, h2, h3 {
 }
 h1 {
   max-width: 12ch;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   font-size: clamp(3.65rem, 8.4vw, 8.5rem);
   line-height: 0.91;
   letter-spacing: -0.055em;
@@ -99,7 +99,7 @@ li::marker { color: var(--color-orange); }
 .eyebrow::before { width: 8px; height: 8px; flex: 0 0 auto; background: var(--color-orange); content: ""; transform: rotate(45deg); }
 .accent { color: var(--color-orange); font-style: italic; font-weight: 700; }
 body[data-scene="paper"] .accent { color: var(--color-text); text-decoration: underline; text-decoration-color: var(--color-orange); text-decoration-thickness: 0.09em; text-underline-offset: 0.12em; }
-.lede { max-width: 60ch; font-size: clamp(1.07rem, 1.5vw, 1.27rem); line-height: 1.72; }
+.lede { max-width: 60ch; font-size: clamp(.90rem, 1.2vw, 1.27rem); line-height: 1.72; }
 .muted { color: var(--color-muted); }
 
 .visually-hidden {

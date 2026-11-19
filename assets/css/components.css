@@ -36,7 +36,7 @@
   border: 1px solid var(--color-orange);
   border-radius: 0;
   background: var(--color-orange);
-  color: #171116;
+  color: #392636;
   font-size: 0.91rem;
   font-weight: 800;
   line-height: 1.2;
@@ -44,7 +44,7 @@
   transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 .button::after { display: inline-block; content: "↗"; font-size: 1.06rem; transition: transform var(--transition-fast); }
-.button:hover:not(:disabled) { transform: translateY(-3px); border-color: #FFAA72; background: #FFAA72; box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.23); }
+.button:hover:not(:disabled) { transform: translateY(-3px); border-color: #ffd176; background: #ffcf70; box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.23); }
 .button:hover::after { transform: translate(3px, -3px); }
 .button--small { min-height: 44px; padding-inline: 15px; font-size: 0.77rem; }
 .button--quiet { border-color: var(--color-border-strong); background: transparent; color: var(--color-ink); }
@@ -84,7 +84,7 @@ body[data-scene="paper"] .service-card, body[data-scene="paper"] .project-card, 
 .project-card:hover .project-card__media::after { opacity: .28; }
 .project-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 600ms cubic-bezier(.2,.7,.2,1); }
 .project-card:hover .project-card__media img { transform: scale(1.04); }
-.project-card__media--euro { display: grid; align-items: end; padding: 22px; background: #321C19; }
+.project-card__media--euro { display: grid; align-items: end; padding: 22px; background: #322919; }
 .project-card__media--euro::after { display: none; }
 .project-card__media-label { color: #FFF0E3; font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 4.5rem); font-weight: 700; letter-spacing: -0.04em; }
 .project-card__body { padding: 23px 23px 27px; }
@@ -105,7 +105,7 @@ body[data-scene="paper"] .service-card, body[data-scene="paper"] .project-card, 
 
 .site-footer { padding: 68px 0 24px; border-top: 1px solid rgba(244,239,232,.14); background: #08090E; color: #F4EFE8; }
 .site-footer .brand, .site-footer .brand__name { color: #F4EFE8; }
-.site-footer .brand__descriptor, .site-footer p, .site-footer__bottom { color: #BEB6B1; }
+.site-footer .brand__descriptor, .site-footer p, .site-footer__bottom { color: #bebab1; }
 .site-footer__top { display: grid; grid-template-columns: minmax(250px, 1fr) minmax(330px, .85fr); gap: 50px; padding-bottom: 45px; }
 .site-footer__statement { max-width: 40ch; margin: 18px 0 13px; font-size: .96rem; }
 .site-footer__company { max-width: 55ch; font-size: .73rem; line-height: 1.8; }

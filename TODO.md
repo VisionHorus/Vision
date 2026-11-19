@@ -66,12 +66,12 @@ Critérios do briefing original, organizados nas etapas autorizadas: Fase 1 + 1B
 
 ### Pendências antes de uma eventual publicação
 
-- Preencher razão social, CNPJ, endereço, e-mail de contato e canal oficial para solicitações LGPD.
-- Confirmar com advogado textos legais, foro, responsabilidade, titularidade/licenças e exclusões juridicamente válidas.
-- Confirmar com provedor de hospedagem/CDN quais logs técnicos são coletados e seu prazo de retenção.
-- Configurar e testar número oficial do WhatsApp para habilitar envio do formulário.
-- Confirmar direitos e créditos das imagens dos projetos/clientes e das imagens de referência usadas nos protótipos.
-- O site não foi publicado; essa entrega não inclui publicação/indexação.
+- [ ] Preencher razão social, CNPJ, endereço, e-mail de contato e canal oficial para solicitações LGPD.
+- [ ] Confirmar com advogado textos legais, foro, responsabilidade, titularidade/licenças e exclusões juridicamente válidas.
+- [ ] Confirmar com provedor de hospedagem/CDN quais logs técnicos são coletados e seu prazo de retenção.
+- [ ] Configurar e testar número oficial do WhatsApp para habilitar envio do formulário.
+- [ ] Confirmar direitos e créditos das imagens dos projetos/clientes e das imagens de referência usadas nos protótipos.
+- [X] O site não foi publicado; essa entrega não inclui publicação/indexação.
 
 ## Revisão visual v2 — nova orientação do usuário
 

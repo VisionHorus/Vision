@@ -1,1 +1,15 @@
-{"routes":[{"path":"/","title":"Presença digital para sua empresa | Vision"},{"path":"/diagnostico/","title":"Diagnóstico digital para sua empresa | Vision"},{"path":"/projetos/","title":"Projetos digitais e sites | Vision"},{"path":"/agenciamento-digital/","title":"Agenciamento digital para negócios | Vision"},{"path":"/criacao-de-sites/","title":"Criação de sites profissionais | Vision"},{"path":"/seo-local/","title":"Google e SEO local para negócios | Vision"},{"path":"/inteligencia-digital/","title":"Inteligência digital e automação | Vision"},{"path":"/privacidade/","title":"Política de Privacidade da Vision"},{"path":"/termos/","title":"Termos de Uso do Site | Vision"},{"path":"/cookies/","title":"Política de Cookies e Tecnologias | Vision"}]}
+{
+    "routes":
+    [
+        {"path":"/","title":"Presença digital para sua empresa | Vision"},
+        {"path":"/diagnostico/","title":"Diagnóstico digital para sua empresa | Vision"},
+        {"path":"/projetos/","title":"Projetos digitais e sites | Vision"},
+        {"path":"/agenciamento-digital/","title":"Agenciamento digital para negócios | Vision"},
+        {"path":"/criacao-de-sites/","title":"Criação de sites profissionais | Vision"},
+        {"path":"/seo-local/","title":"Google e SEO local para negócios | Vision"},
+        {"path":"/inteligencia-digital/","title":"Inteligência digital e automação | Vision"},
+        {"path":"/privacidade/","title":"Política de Privacidade da Vision"},
+        {"path":"/termos/","title":"Termos de Uso do Site | Vision"},
+        {"path":"/cookies/","title":"Política de Cookies e Tecnologias | Vision"}
+    ]
+}

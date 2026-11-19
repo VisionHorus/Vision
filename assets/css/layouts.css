@@ -99,7 +99,7 @@ body[data-page="projects"] .page-hero::before, body[data-page="projects"] .page-
 .project-hero-feature > .text-link { justify-self: start; font-size: .75rem; }
 body[data-page="intelligence"] .page-hero::before, body[data-page="intelligence"] .page-hero::after { display: none; }
 .page-hero__aside--intelligence { display: grid; max-width: 460px; gap: 18px; }
-.intelligence-hero-art { position: relative; justify-self: end; width: min(100%,320px); margin: 0; overflow: hidden; border: 1px solid var(--color-border-strong); background: var(--color-surface); box-shadow: 12px 12px 0 rgba(244,122,64,.09); }
+.intelligence-hero-art { position: relative; justify-self: start; width: min(100%,320px); margin: 0; overflow: hidden; border: 1px solid var(--color-border-strong); background: var(--color-surface); box-shadow: 12px 12px 0 rgba(244,122,64,.09); }
 .intelligence-hero-art img { display: block; width: 100%; max-height: 350px; aspect-ratio: 4 / 5; object-fit: contain; mix-blend-mode: screen; }
 .intelligence-hero-art figcaption { position: absolute; right: 10px; bottom: 10px; left: 10px; display: grid; gap: 4px; padding: 11px 13px; background: rgba(9,10,16,.9); color: #F4EFE8; font-family: var(--font-display); font-size: 1.08rem; font-weight: 650; line-height: 1.15; }
 .intelligence-hero-art__label { color: #D7C7BB; font-family: var(--font-mono); font-size: .58rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; }
